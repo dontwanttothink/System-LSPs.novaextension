@@ -1,0 +1,32 @@
+{
+    "identifier": "org.SystemLSPs",
+    "name": "System LSPs",
+    "organization": "System LSPs",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["languages"],
+
+    "main": "main.js",
+
+    "entitlements": {
+        "process": true,
+        "filesystem": "readonly"
+    },
+
+    "config": [
+        {
+            "key": "example.language-server-paths",
+            "title": "Language Server Paths",
+            "type": "stringArray",
+            "default": ["/usr/bin/env typescript-language-server --stdio"],
+            "description": "You may include command-line arguments. Ensure that your language server uses standard input and output for communication."
+        },
+        {
+            "key": "example.language-server-syntaxes",
+            "title": "Enabled Syntaxes",
+            "type": "stringArray",
+            "default": ["javascript, typescript"],
+            "description": "Write a comma-separated list of syntaxes applicable to each language server. Ensure the first item in this list corresponds to the first item in the list of paths, and so on."
+        }
+    ]
+}
