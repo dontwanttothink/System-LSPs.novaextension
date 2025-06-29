@@ -1,4 +1,4 @@
-/// path -> active (started) language server object
+/** path -> active (started) language server object */
 let langservers = new Map();
 langservers.deactivate = function() {
     for (const langserver of this.values()) {
@@ -80,7 +80,7 @@ class SystemLanguageServer {
         };
         console.log(JSON.stringify(clientOptions));
 
-        const client = new LanguageClient('example-langserver-' + this.path, 'System Language Server for ' + this.path, serverOptions, clientOptions);
+        const client = new LanguageClient('example-langserver-' + this.path, this.path + " (System LSP)", serverOptions, clientOptions);
 
         client.onDidStop((maybeError) => {
             if (maybeError) {
