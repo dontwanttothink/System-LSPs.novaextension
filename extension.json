@@ -2,7 +2,7 @@
     "identifier": "org.SystemLSPs",
     "name": "System LSPs",
     "organization": "System LSPs",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Quickly register LSP implementations installed on your system",
     "version": "1.0",
     "categories": ["languages"],
 
@@ -15,14 +15,14 @@
 
     "config": [
         {
-            "key": "example.language-server-paths",
+            "key": "SystemLSPs.language-server-paths",
             "title": "Language Server Paths",
             "type": "stringArray",
             "default": ["/usr/bin/env typescript-language-server --stdio"],
             "description": "You may include command-line arguments. Ensure that your language server uses standard input and output for communication."
         },
         {
-            "key": "example.language-server-syntaxes",
+            "key": "SystemLSPs.language-server-syntaxes",
             "title": "Enabled Syntaxes",
             "type": "stringArray",
             "default": ["javascript, typescript"],

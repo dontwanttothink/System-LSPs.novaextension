@@ -7,8 +7,8 @@ langservers.deactivate = function() {
     this.clear();
 }
 
-const PATHS_CONFIG = "example.language-server-paths";
-const SYNTAXES_CONFIG = "example.language-server-syntaxes";
+const PATHS_CONFIG = "SystemLSPs.language-server-paths";
+const SYNTAXES_CONFIG = "SystemLSPs.language-server-syntaxes";
 
 function initializeLanguageServers() {
     langservers.deactivate();
